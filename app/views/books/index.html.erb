@@ -2,11 +2,11 @@
 <% @books.each do |book| %>
 <h5>Title</h5>
 
-<p><% @books.title %></p>
+<p><%=book.title %></p>
 
 <h5>Body</h5>
 
-<p><% @books.body %></p>
+<p><%＝book.body %></p>
 
 <span>
   <%=link_to book.show,"/books/#{book.id}" %>
