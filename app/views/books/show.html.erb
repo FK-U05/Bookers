@@ -1,9 +1,18 @@
-<h3>Title:
-<%=@book.title%></h3>
 
-<h3>Body:
-<%=@book.body%></h3>
+<div class="create-after">
 
-<%=link_to Edit,book_path(book.id)%>
-<%=link_to Back,book_path(book.id)%>
+<h5　class="create">Title:
+
+<p> %=@book.title%></p>
+
+</h5>
+
+<h5 class="create">Body:
+<%=@book.body%></h5>
+
+</div>
+
+<%=link_to 'Edit',edit_book_path(@book)%>
+<%=link_to 'Back',books_path(@book)%>
+<%=link_to 'Destroy',book_path(@book),method: :delete,"data_confirm"=>"Are you sure?" %>
 

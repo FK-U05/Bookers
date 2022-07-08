@@ -6,10 +6,12 @@
 
 <h5>Body</h5>
 
-<p><%＝book.body %></p>
+<p><%= book.body %></p>
 
 <span>
-  <%=link_to book.show,"/books/#{book.id}" %>
+  <%=link_to 'Show',"/books/#{book.id}" %>
+  <%=link_to 'Edit',edit_book_path(@books),method: :patch %>
+  <%=link_to 'Destroy',book_path(book.id),method: :delete,"data_confirm" =>"Are you sure?" %>
 </span>
 
 <%end%>
