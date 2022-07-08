@@ -8,25 +8,67 @@
 
 }
 
-.haader-top{
-  margin:50px;
-}
-
-h3{
-  margin-top:50px;
-  margin-bottom:20px;
+.title-book{
+  margin:33px 0 0 33px;
+  font-size:18px;
 
 }
 
-h5{
-  margin-top:10px;
+.index-list{
+  display:flex;
+  justify-content:center;
+  list-style:none;
+  margin:10px;
+  font-weight:bold;
+  font-size:10px;
+}
+
+.list1{
+  margin:0 100px 0 0;
+}
+
+.main-text{
+  display:flex;
+  flex-wrap:wrap;
+  text-align:center;
+  margin:0 33px;
+}
+
+.text-title{
+  margin-right:100px;
+  border:2px solid red;
+}
+
+.text-body{
+  border:2px solid blue;
 }
 
 .create-after{
-  margin:70px auto 0;
+  margin:33px;
 
 }
-.create{
-  font-size:15px;
 
+.create1{
+  margin:20px;
+}
+
+.create2{
+  margin:20px;
+}
+
+.edit-box{
+  margin:33px;
+}
+
+.edit-top{
+  margin-bottom:10px;
+}
+
+.edit-body{
+  margin-top:10px;
+}
+
+.update-botan{
+  margin-top:10px;
+  margin-bottom:10px;
 }
