@@ -11,6 +11,11 @@
   </head>
 
   <body>
+
+    <div class="notice"><%= flash[:notice] %></div>
+    <div class="notice"><%= flash[:notice_up] %></div>
+    <div class="notice"><%= flash[:notice_des] %></div>
+
     <%= yield %>
   </body>
 </html>

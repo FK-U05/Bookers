@@ -2,12 +2,22 @@
 
 <h1 class="edit-top">Editing Book</h1>
 
+<% if @book.errors.any? %>
+ <%= @book.errors.count %> errors prohibited this book from being saved:
+<ul>
+  <% @book.errors.full_messages.each do |message| %>
+<li><%= message %></li>
+ <% end %>
+</ul>
+<% end %>
+
 <%= form_with model:@book,url:book_path(@book.id),method: :patch do |f| %>
 
-<p class="edit-title">
+<div class="edit-title">
   <strong>Title</strong>
-  </p>
 <%= f.text_field :title %>
+
+</div>
 
 <p class="edit-body">
   <strong>Body</strong>

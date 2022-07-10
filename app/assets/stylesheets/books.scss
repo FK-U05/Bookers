@@ -8,39 +8,12 @@
 
 }
 
-.title-book{
-  margin:33px 0 0 33px;
-  font-size:18px;
-
+body{
+  margin:33px;
 }
+.new-box{
 
-.index-list{
-  display:flex;
-  justify-content:center;
-  list-style:none;
-  margin:10px;
-  font-weight:bold;
-  font-size:10px;
-}
-
-.list1{
-  margin:0 100px 0 0;
-}
-
-.main-text{
-  display:flex;
-  flex-wrap:wrap;
-  text-align:center;
-  margin:0 33px;
-}
-
-.text-title{
-  margin-right:100px;
-  border:2px solid red;
-}
-
-.text-body{
-  border:2px solid blue;
+  margin:50px;
 }
 
 .create-after{
@@ -69,6 +42,6 @@
 }
 
 .update-botan{
-  margin-top:10px;
-  margin-bottom:10px;
+　
 }
+
